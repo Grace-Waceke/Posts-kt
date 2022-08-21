@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                     var posts = response.body()
                     Toast.makeText(baseContext, "fetched ${posts!!.size} posts", Toast.LENGTH_LONG).show()
 
-                    var PostsRvAdapter = PostsRvAdapter(baseContext,posts)
+                    var PostsRvAdapter = PostsRvAdapter(posts)
                     binding.rvDisplay.layoutManager = LinearLayoutManager(baseContext)
                     binding.rvDisplay.adapter = PostsRvAdapter
 

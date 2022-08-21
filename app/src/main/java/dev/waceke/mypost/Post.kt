@@ -17,5 +17,6 @@ data class Comment(
     var name: String,
     var email: String,
     var body: String,
+    var title: String,
 )
 //    generic functions <T>
