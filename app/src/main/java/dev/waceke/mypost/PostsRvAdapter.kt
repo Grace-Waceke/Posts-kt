@@ -34,8 +34,8 @@ class PostsRvAdapter( var postList: List<Post>): RecyclerView.Adapter<RetrofitVi
         holder.bindingView.tvUserId.text = Currentposts.title
         holder.bindingView.tvId.text =Currentposts.body
         val context =holder.itemView.context
-        holder.bindingView.tvUserId.setOnClickListener{
-            val  intent =Intent(holder.itemView.context, commentRVAdapter::class.java)
+        holder.bindingView.cvPosts.setOnClickListener{
+            val  intent =Intent(context,CommentsActivity::class.java)
             intent.putExtra("POST_ID", Currentposts.id)
             context.startActivity(intent)
 

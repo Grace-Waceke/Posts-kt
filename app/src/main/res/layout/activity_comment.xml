@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".commentActivity">
+    tools:context=".CommentsActivity">
 
     <TextView
         android:id="@+id/tvPostTitle"
@@ -68,5 +68,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolBarComment"
-        tools:listitem="@layout/activity_comment" />
+        tools:listitem="@layout/comment_list" />
 </androidx.constraintlayout.widget.ConstraintLayout>
